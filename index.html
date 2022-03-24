@@ -5,9 +5,182 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>booky</title>
+    <!--fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet"> 
+    <!--font awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--tailwind-->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!--css-->
+    <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, aut.</p>        
+<body class="p-10 lg:pt-0">
+    <header>
+        <nav class="lg:flex lg:justify-between">
+            <img src="img/booki_logo.svg" alt="logo Booki" class="w-2/5 mt-10 ml-10 lg:max-w-[10%] lg:mt-0 ml-0">
+            <div class="flex justify-center">
+                <a href="#" class='font-semibold p-10 text-lg border-b-4 border-indigo-500/75 lg:border-none'>Hébergements</a>
+                <a href="#" class='font-semibold p-10 text-lg border-b-4 lg:border-none'>Activités</a>
+            </div>
+        </nav>
+    </header> 
+    <main>
+        <section class="p-7 lg:p-0">
+            <h2 class="text-4xl font-bold lg:text-2xl">Trouvez votre hébergement pour des vacances de rêve</h2>
+            <p class="font-light text-sm pb-4">En plein centre ville ou en pleine nature</p>
+            <div class="flex rounded-full">
+                <label for="location" class="bg-gray-200 p-4 rounded-l-full"><i class="fa-solid fa-location-dot"></i></label>
+                <input type="text" id="location" class="border-y border-grey-200 lg:w-[40%]">
+                <button type="submit" class="bg-indigo-500 rounded-r-full p-4 text-white"><i class="fa-solid fa-magnifying-glass"></i></button> 
+            </div>
+            <div class="flex font-light text-sm pt-4 lg:mb-8">
+                <i class="fa-solid fa-circle-info"></i>
+                <p>Plus de 500 logements disponibles dans cette ville</p>
+            </div>
+        </section>
+        <div class="max-w-[90%] mx-auto lg:max-w-[100%]">
+            <section class="rounded-lg bg-gray-200 mb-10 px-10">
+                <h3 class="text-3xl font-bold mb-7 pt-5 lg:text-xl">Hébergements à Marseille</h3>
+                <div class="flex flex-wrap justify-center lg:justify-between">
+                    <div class="bg-white p-4 rounded-lg mb-7 shadow-lg lg:max-w-[30%]">
+                        <img src="https://picsum.photos/300/200" alt="random">
+                        <p class="font-bold pt-2">Auberge de la Cannebière</p>
+                        <p class="font-light text-xs">Nuit à partir de 25€</p>
+                        <div>
+                            <i class="fa-solid fa-star text-blue-400"></i>
+                            <i class="fa-solid fa-star text-blue-400"></i>
+                            <i class="fa-solid fa-star text-blue-400"></i>
+                            <i class="fa-solid fa-star text-slate-300"></i>
+                            <i class="fa-solid fa-star text-slate-300"></i>                            
+                        </div>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg mb-7 shadow-lg">
+                        <img src="https://picsum.photos/300/200" alt="random">
+                        <p class="font-bold pt-2">Hôtel du port</p>
+                        <p class="font-light text-xs">Nuit à partir de 52€</p>
+                        <div>
+                            <i class="fa-solid fa-star text-blue-400"></i>
+                            <i class="fa-solid fa-star text-blue-400"></i>
+                            <i class="fa-solid fa-star text-blue-400"></i>
+                            <i class="fa-solid fa-star text-slate-300"></i>
+                            <i class="fa-solid fa-star text-slate-300"></i>  
+                        </div>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg mb-7 shadow-lg">
+                        <img src="https://picsum.photos/300/200" alt="random">
+                        <p class="font-bold pt-2">Hôtel les mouettes</p>
+                        <p class="font-light text-xs">Nuit à partir de 76€</p>
+                        <div>
+                            <i class="fa-solid fa-star text-blue-400"></i>
+                            <i class="fa-solid fa-star text-blue-400"></i>
+                            <i class="fa-solid fa-star text-blue-400"></i>
+                            <i class="fa-solid fa-star text-slate-300"></i>
+                            <i class="fa-solid fa-star text-slate-300"></i>  
+                        </div>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg mb-7 shadow-lg">
+                        <img src="https://picsum.photos/300/200" alt="random">
+                        <p class="font-bold pt-2">Hôtel de la mer</p>
+                        <p class="font-light text-xs">Nuit à partir de 46€</p>
+                        <div>
+                            <i class="fa-solid fa-star text-blue-400"></i>
+                            <i class="fa-solid fa-star text-blue-400"></i>
+                            <i class="fa-solid fa-star text-blue-400"></i>
+                            <i class="fa-solid fa-star text-slate-300"></i>
+                            <i class="fa-solid fa-star text-slate-300"></i>  
+                        </div>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg mb-7 shadow-lg">
+                        <img src="https://picsum.photos/300/200" alt="random">
+                        <p class="font-bold pt-2">Auberge Le Panier</p>
+                        <p class="font-light text-xs">Nuit à partir de 23€</p>
+                        <div>
+                            <i class="fa-solid fa-star text-blue-400"></i>
+                            <i class="fa-solid fa-star text-blue-400"></i>
+                            <i class="fa-solid fa-star text-blue-400"></i>
+                            <i class="fa-solid fa-star text-slate-300"></i>
+                            <i class="fa-solid fa-star text-slate-300"></i>  
+                        </div>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg mb-7 shadow-lg">
+                        <img src="https://picsum.photos/300/200" alt="random">
+                        <p class="font-bold pt-2">Hôtel chez Amina</p>
+                        <p class="font-light text-xs">Nuit à partir de 96€</p>
+                        <div>
+                            <i class="fa-solid fa-star text-blue-400"></i>
+                            <i class="fa-solid fa-star text-blue-400"></i>
+                            <i class="fa-solid fa-star text-blue-400"></i>
+                            <i class="fa-solid fa-star text-slate-300"></i>
+                            <i class="fa-solid fa-star text-slate-300"></i>  
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="rounded-lg bg-gray-200 mb-10 px-10">
+                <h3 class="text-3xl font-bold mb-7 pt-5">Les plus populaires</h3>
+                <div class="flex flex-wrap justify-center">
+                    <div class="bg-white p-4 rounded-lg mb-7 shadow-lg">
+                        <img src="https://picsum.photos/300/200" alt="random">
+                        <p p class="font-bold pt-2">Auberge de la Cannebière</p>
+                        <p class="font-light text-xs">Nuit à partir de 25€</p>
+                        <div>
+                            <i class="fa-solid fa-star text-blue-400"></i>
+                            <i class="fa-solid fa-star text-blue-400"></i>
+                            <i class="fa-solid fa-star text-blue-400"></i>
+                            <i class="fa-solid fa-star text-slate-300"></i>
+                            <i class="fa-solid fa-star text-slate-300"></i>  
+                        </div>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg mb-7 shadow-lg">
+                        <img src="https://picsum.photos/300/200" alt="random">
+                        <p p class="font-bold pt-2">Hôtel du port</p>
+                        <p class="font-light text-xs">Nuit à partir de 52€</p>
+                        <div>
+                            <i class="fa-solid fa-star text-blue-400"></i>
+                            <i class="fa-solid fa-star text-blue-400"></i>
+                            <i class="fa-solid fa-star text-blue-400"></i>
+                            <i class="fa-solid fa-star text-slate-300"></i>
+                            <i class="fa-solid fa-star text-slate-300"></i>  
+                        </div>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg mb-7 shadow-lg">
+                        <img src="https://picsum.photos/300/200" alt="random">
+                        <p p class="font-bold pt-2">Hôtel les mouettes</p>
+                        <p class="font-light text-xs">Nuit à partir de 76€</p>
+                        <div>
+                            <i class="fa-solid fa-star text-blue-400"></i>
+                            <i class="fa-solid fa-star text-blue-400"></i>
+                            <i class="fa-solid fa-star text-blue-400"></i>
+                            <i class="fa-solid fa-star text-slate-300"></i>
+                            <i class="fa-solid fa-star text-slate-300"></i>  
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <section class="max-w-[90%] mx-auto mb-10">
+            <h3 class="text-3xl font-bold text-center mb-7 pt-5">Activités à Marseille</h3>
+            <img src="https://picsum.photos/300/200" alt="random" class="rounded-lg mx-auto mb-4">
+            <img src="https://picsum.photos/300/200" alt="random" class="rounded-lg mx-auto mb-4">
+            <img src="https://picsum.photos/300/200" alt="random" class="rounded-lg mx-auto mb-4">
+            <img src="https://picsum.photos/300/200" alt="random" class="rounded-lg mx-auto mb-4">
+            <img src="https://picsum.photos/300/200" alt="random" class="rounded-lg mx-auto mb-4">
+            <img src="https://picsum.photos/300/200" alt="random" class="rounded-lg mx-auto mb-4">  
+        </section>
+    </main>  
+    <footer class="bg-gray-200">
+        <div class="text-center flex flex-col">
+            <h4 class="font-semibold text-sm mb-3">A propos</h4>
+            <div class="flex flex-col">
+                <a href="#" class="font-light text-sm "> Fonctionnement du site</a>
+                <a href="#" class="font-light text-sm ">Conditions générales de vente</a>
+                <a href="#" class="font-light text-sm "> Données et confidentialité</a>
+            </div>
+        </div>
+
+    </footer> 
     
 </body>
 </html>
